@@ -245,7 +245,7 @@ body { margin: 0;
                          top: -45px;
                          right: 30%;
                          transform: translateX(50%) rotate(6deg);
-                         background-image: url("ticket.png") center / 100% 100% no-repeat;
+                         background-image: url("ticket.png") center / contain no-repeat;
                          border: none;
                          padding: 12px 30px;
                          text-align: left;
