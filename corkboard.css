@@ -199,7 +199,9 @@ body { margin: 0;
                               padding: 30px 35px;
                               display: flex;
                               flex-direction: column;
-                              background: white;
+                              background-image: url("ticket.png");
+                              background-repeat: no-repeat;
+                              background-size: cover;
                               box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.18); }
                          .welcome-copy h2 { font-family: 'Caveat', cursive;
                               font-size: clamp(3rem, 4vw, 4rem);
