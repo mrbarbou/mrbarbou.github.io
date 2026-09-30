@@ -199,9 +199,7 @@ body { margin: 0;
                               padding: 30px 35px;
                               display: flex;
                               flex-direction: column;
-                              background-image: url("ticket.png");
-                              background-repeat: no-repeat;
-                              background-size: cover;
+                              background: white;
                               box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.18); }
                          .welcome-copy h2 { font-family: 'Caveat', cursive;
                               font-size: clamp(3rem, 4vw, 4rem);
@@ -214,9 +212,10 @@ body { margin: 0;
                               font-weight: 400;
                               margin-bottom: 8px; }
                          .about-label { align-self: flex-start;
-                              background: #c7e5cf;
+                              background-image: url("ticket.png");
+                              background-repeat: no-repeat;
+                              background-size: cover;
                               padding: 8px;
-                              border-radius: 5px;
                               font-family: 'Nunito', sans-serif;
                               font-size: 1.2rem;
                               font-weight: 600;
