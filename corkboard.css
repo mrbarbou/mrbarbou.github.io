@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap");
 * { box-sizing: border-box;
      margin: 0;
      padding: 0; }
 html { scroll-behavior: smooth; }
 body { margin: 0;
-     background-image: url(images/background.png);
+     background-image: url("background.png");
      background-size: 500px 700px;
      background-repeat: repeat;
      background-position: top left;
@@ -134,7 +134,7 @@ body { margin: 0;
                     transform: translateX(-50%) rotate(-5deg);
                     width: 190px;
                     height: 190px;
-                    background-image: url("images/pink-binder-clip.png");
+                    background-image: url("pink-binder-clip.png");
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center; }
@@ -150,7 +150,7 @@ body { margin: 0;
                     font-weight: 500; }
           .content { border: 14px solid #c49a6c;
                padding: 30px;
-               background-image: url("images/corkboard.jpeg");
+               background-image: url("corkboard.jpeg");
                background-size: 875px 875px;
                background-repeat: repeat;
                background-position: center;
@@ -223,7 +223,7 @@ body { margin: 0;
                     width: 66%;
                     margin: 25px auto 0;
                     padding: 50px 30px 20px; 
-                    background-image: url(images/grid-paper.jpeg);
+                    background-image: url("grid-paper.jpeg");
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat; 
@@ -235,7 +235,7 @@ body { margin: 0;
                     transform: translateX(100%);
                     width: 170px;
                     height: 170px;
-                    background-image: url("images/green-thumb-tack.png");
+                    background-image: url("green-thumb-tack.png");
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
