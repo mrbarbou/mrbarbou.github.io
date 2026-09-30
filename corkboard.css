@@ -212,6 +212,7 @@ body { margin: 0;
                               font-weight: 400;
                               margin-bottom: 8px; }
                          .about-label { align-self: flex-start;
+                              background: #c7e5cf;
                               padding: 8px;
                               border-radius: 5px;
                               font-family: 'Nunito', sans-serif;
