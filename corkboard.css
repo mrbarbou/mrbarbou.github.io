@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap');
 * { box-sizing: border-box;
      margin: 0;
      padding: 0; }
@@ -168,13 +168,16 @@ body { margin: 0;
                     box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.18); }
                     .hero-images img:nth-child(1) { left: 5%;
                          top: 25px;
-                         transform: rotate(-12deg); }
+                         transform: rotate(-12deg);
+                         z-index: 1; }
                     .hero-images img:nth-child(2) { left: 50%;
                          top: 115px;
-                         transform: translateX(-50%); }
+                         transform: translateX(-50%);
+                         z-index: 3; }
                     .hero-images img:nth-child(3) { right: 4%;
                          top: 45px;
-                         transform: rotate(9deg); }
+                         transform: rotate(9deg);
+                         z-index: 2; }
                .welcome-section { display: grid;
                     grid-template-columns: 220px 1fr; 
                     gap: 25px;
@@ -239,21 +242,27 @@ body { margin: 0;
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
-                    z-index: 10; }
+                    z-index: 12; }
                     .sneak-heading { position: absolute;
-                         width: 80%;
                          top: -45px;
-                         right: 30%;
-                         transform: translateX(50%) rotate(6deg);
-                         background-image: url("ticket.png") center / contain no-repeat;
+                         right: 35%;
+                         width: 80%;
+                         background-image: url("ticket.png");
+                         background-size: 100% 300%;
+                         background-position: center;
+                         background-repeat: no-repeat;
                          border: none;
-                         padding: 12px 30px;
+                         padding: 30px 95px;
+                         transform: translateX(50%) rotate(6deg);
                          text-align: left;
                          font-family: 'Caveat', cursive;
-                         font-size: 2.5rem;
-                         font-weight: 600
+                         color: #3f3f3f;
+                         -webkit-text-stroke: 0.5px #707070;
+                         font-size: 1.85rem;
+                         font-weight: 500;
+                         letter-spacing: 0.3px;
                          line-height: 1;
-                         z-index: 5; 
+                         z-index: 10; }
                     .sneak-title { text-align: center;
                          background: #c7e5cf;
                          border-radius: 5px;
