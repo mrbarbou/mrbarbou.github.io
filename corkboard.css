@@ -160,12 +160,12 @@ body { margin: 0;
                gap: 35px; }
                .hero-images { position: relative;
                     min-height: 380px; }
-               .hero-images img { position: absolute;
+               .hero-images > img:not(.washi) { position: absolute;
                     width: 38%;
                     max-width: 320px;
                     aspect-ratio: 1.4 / 1;
                     object-fit: cover;
-                    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.18); }
+                    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.2); }
                     .hero-images img:nth-child(1) { left: 5%;
                          top: 25px;
                          transform: rotate(-12deg);
@@ -178,6 +178,21 @@ body { margin: 0;
                          top: 45px;
                          transform: rotate(9deg);
                          z-index: 2; }
+                    .hero-images .washi { position: absolute;
+                         width: 200px;
+                         height: auto;
+                         border: none;
+                         pointer-events: none;
+                         z-index: 10; }
+                         .washi-1 { left: 7%;
+                              top: 12px;
+                              transform: rotate(-12deg); }
+                         .washi-2 { left: 43%;
+                              top: 90px;
+                              transform: rotate(4deg); }
+                         .washi-3 { right: 6%;
+                              top: 30px;
+                              transform: rotate(9deg); }
                .welcome-section { display: grid;
                     grid-template-columns: 220px 1fr; 
                     gap: 25px;
