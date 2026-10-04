@@ -301,19 +301,296 @@ body { margin: 0;
                               font-size: 1.6rem;
                               line-height: 2;
                               font-weight: 500; }
-     .site-footer { margin-top: 12px;
-          padding: 20px;
-          text-align: center; }
-          .footer-nav { display: flex;
-               justify-content: space-around;
-               flex-wrap: wrap;
-               gap: 15px;
-               margin-bottom: 12px; }
-          .footer-nav a { color: #111111;
-               text-decoration: none;
-               font-family: 'Trebuchet MS', sans-serif;
-               font-size: 1.2rem; }
-          .footer-nav a:hover { text-decoration: underline; 
-               font-weight: bold; }
-          .copyright { font-size: 0.85rem; 
-               padding-top: 20px; }
+.junk-journal-page { display: block; }
+.beaded-title { display: flex;
+     position: relative;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 18px;
+     margin-bottom: 20px; }
+     .bead { width: 65px;
+          height: 65px;
+          display: flex;
+          position: relative;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background: #fffdf8;
+          color: #4f4a45;
+          font-family: 'Fredoka', sans-serif;
+          font-size: 2.2rem;
+          font-weight: 500;
+          line-height: 1;
+          border: 2px solid rgba(0, 0, 0, 0.12);
+          box-shadow: inset 3px 3px 5px rgba(255, 255, 255, 0.55),
+               inset -4px -5px 7px rgba(0, 0, 0, 0.18), 4px 5px 7px rgba(0, 0, 0, 0.25);
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12); }
+          .title-space { width: 18px; }
+               .bead:nth-child(1) { transform: rotate(-5deg); }
+               .bead:nth-child(2) { transform: rotate(3deg); }
+               .bead:nth-child(3) { transform: rotate(-2deg); }
+               .bead:nth-child(4) { transform: rotate(4deg); }
+               .bead:nth-child(6) { transform: rotate(3deg); }
+               .bead:nth-child(8) { transform: rotate(-4deg); }
+               .bead:nth-child(10) { transform: rotate(3deg); }
+     .bead-word { display: flex;
+          flex-wrap: nowrap;
+          white-space: nowrap;
+          gap: 8px; }
+.journal-intro { text-align: center;
+     margin: 10px auto 35px;
+     max-width: 800px; }
+     .journal-intro h2 { font-family: 'Caveat', cursive;
+          font-size: clamp(3.5rem, 5vw, 5rem);
+          font-weight: 600;
+          line-height: 1;
+          margin-bottom: 10px; }
+     .journal-intro p { font-family: 'Nunito', sans-serif;
+          font-size: 1.1rem; }
+     .journal-images { display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+          max-width: 900px;
+          margin: 0 auto 45px;
+          align-items: start; }
+     .journal-images figure { background: white;
+          padding: 10px 10px 18px;
+          box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.18); }
+     .journal-images figure:nth-child(1) { transform: rotate(-3deg); }
+     .journal-images figure:nth-child(2) { transform: rotate(2deg); }
+     .journal-images figure:nth-child(3) { transform: rotate(-2deg); }
+     .journal-images img { display: block;
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          object-fit: cover; }
+     .journal-images figcaption { text-align: center;
+          margin-top: 8px;
+          font-family: 'Caveat', cursive;
+          font-size: 1.4rem; }
+     .journal-post { max-width: 900px;
+          margin: 0 auto 30px;
+          padding: 45px 55px;
+          background: #fffdf7;
+          box-shadow: 4px 5px 12px rgba(0, 0, 0, 0.18); }
+.post-heading { text-align: center;
+     margin-bottom: 30px; }
+     .post-label { display: inline-block;
+          background: #c7e5cf;
+          padding: 6px 15px;
+          border-radius: 4px;
+          font-family: 'Nunito', sans-serif;
+          font-size: 0.95rem;
+          font-weight: 600;
+          margin-bottom: 12px; }
+     .post-heading h3 { font-family: 'Caveat', cursive;
+          font-size: clamp(2.5rem, 4vw, 3.8rem);
+          font-weight: 600;
+          line-height: 1;
+          margin-bottom: 5px; }
+     .post-date { font-family: 'Nunito', sans-serif;
+          font-size: 0.9rem;
+          font-style: italic; }
+     .post-content { max-width: 750px;
+          margin: 0 auto; }
+     .post-content p { font-family: 'Nunito', sans-serif;
+          font-size: 1rem;
+          line-height: 1.8;
+          margin-bottom: 20px; }
+     .post-content h4 { font-family: 'Caveat', cursive;
+          font-size: 2.2rem;
+          font-weight: 600;
+          margin: 30px 0 10px; }
+     .post-content ul {
+          margin: 0 0 25px 25px;
+          font-family: 'Nunito', sans-serif;
+          line-height: 1.8; }
+.bookshelf-page { display: block; }
+     .bookshelf-intro {
+          text-align: center;
+          max-width: 800px;
+          margin: 10px auto 40px; }
+     .bookshelf-intro p { font-family: 'Nunito', sans-serif;
+          font-size: 1.1rem;
+          line-height: 1.7;
+          margin-top: 20px; }
+     .bookshelf-page .beaded-title { display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 18px;
+          margin-bottom: 15px; }
+     .bookshelf-page .bead-word { display: flex;
+          flex-wrap: nowrap;
+          white-space: nowrap;
+          gap: 8px; }
+     .bookshelf-page .bead { width: 65px;
+          height: 65px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background: #fffdf8;
+          color: #4f4a45;
+          font-family: 'Fredoka', sans-serif;
+          font-size: 2.2rem;
+          font-weight: 500;
+          line-height: 1;
+          border: 2px solid rgba(0, 0, 0, 0.12);
+          box-shadow: inset 3px 3px 5px rgba(255, 255, 255, 0.9),
+               inset -4px -5px 7px rgba(0, 0, 0, 0.15), 4px 5px 7px rgba(0, 0, 0, 0.25);
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12); }
+     .current-read { max-width: 900px;
+          margin: 0 auto 50px;
+          display: grid;
+          grid-template-columns: 250px 1fr;
+          gap: 40px;
+          align-items: center;
+          padding: 35px 45px;
+          background: #fffdf7;
+          box-shadow: 4px 5px 12px rgba(0, 0, 0, 0.18);
+          position: relative; }
+     .current-read-image { display: flex;
+          justify-content: center; }
+     .current-read-image img { display: block;
+          width: 200px;
+          aspect-ratio: 2 / 3;
+          object-fit: cover;
+          box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.25);
+          transform: rotate(-3deg); }
+     .current-read-info { padding: 10px 5px; }
+     .book-label .section-label { display: inline-block;
+          background: #c7e5cf;
+          padding: 6px 15px;
+          border-radius: 4px;
+          font-family: 'Nunito', sans-serif;
+          font-size: 0.9rem;
+          font-weight: 700;
+          letter-spacing: 0.03em; }
+     .current-read-info h3 {
+          font-family: 'Caveat', cursive;
+          font-size: clamp(2.5rem, 4vw, 3.8rem);
+          font-weight: 600;
+          line-height: 1;
+          margin: 15px 0 0; }
+     .book-author { font-family: 'Nunito', sans-serif;
+          font-style: italic;
+          margin: 5px 0 20px; }
+     .reading-progress { font-family: 'Nunito', sans-serif;
+          font-size: 1rem;
+          margin-bottom: 5px; }
+     .last-updated { font-family: 'Nunito', sans-serif;
+          font-size: 0.85rem;
+          font-style: italic;
+          margin-bottom: 20px; }
+     .current-thoughts { font-family: 'Nunito', sans-serif;
+          font-size: 1rem;
+          line-height: 1.8;
+          padding-top: 15px;
+          border-top: 1px dashed rgba(0, 0, 0, 0.25); }
+     .recent-reads { max-width: 1050px;
+          margin: 0 auto 30px; }
+     .section-heading { text-align: center;
+          margin-bottom: 25px; }
+     .section-heading h3 { font-family: 'Caveat', cursive;
+          font-size: clamp(2.5rem, 4vw, 3.8rem);
+          font-weight: 600;
+          line-height: 1;
+          margin: 12px 0 5px; }
+     .section-heading p { font-family: 'Nunito', sans-serif;
+          margin: 0; }
+     .book-table-wrapper { width: 100%;
+          overflow-x: auto;
+          background: #fffdf7;
+          box-shadow: 4px 5px 12px rgba(0, 0, 0, 0.18); }
+     .book-table { width: 100%;
+          min-width: 850px;
+          border-collapse: collapse;
+          font-family: 'Nunito', sans-serif; }
+     .book-table thead { background: #e8dccb; }
+     .book-table th { padding: 15px 12px;
+          font-size: 0.9rem;
+          font-weight: 700;
+          text-align: left;
+          border-bottom: 3px solid #cbbca7; }
+     .book-table td { padding: 18px 12px;
+          font-size: 0.95rem;
+          line-height: 1.5;
+          vertical-align: top;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+     .book-table td:first-child { min-width: 150px; }
+     .book-table td:nth-child(4) { min-width: 280px; }
+     .book-table td:last-child { white-space: nowrap;
+          font-size: 1.1rem;
+          letter-spacing: 2px; }
+     .book-table tbody tr:nth-child(even) { background: rgba(255, 255, 255, 0.45); }
+     .book-rating {white-space: nowrap; }
+     .stars { font-family: 'Caveat', cursive;
+          font-size: 1rem;
+          letter-spacing: 2px;
+          line-height: 1; }
+.weekly-treat { max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif; }
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333; }
+.recipe-container { display: flex;
+  gap: 40px;
+  flex-wrap: wrap; /* Triggers the mobile collapse */ }
+.recipe-meta-column { flex: 1 1 0.5;
+     display: flex;
+  flex-direction: column;
+  gap: 20px; }
+.recipe-image-wrapper { width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.recipe-image { width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; }
+.recipe-time-card { background-color: #f9f6f0; /* Soft, warm tint for cozy feel */
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px dashed #d1c7bd; }
+.recipe-content-column {
+  flex: 2 1 450px; }
+.recipe-name { font-size: 1.75rem;
+  margin-top: 0;
+  color: #2c3e50; }
+.recipe-time-card h3 .recipe-ingredients h4 .recipe-instructions h4 { margin-top: 0;
+  margin-bottom: 12px;
+  color: #4a3b32;
+  font-size: 1.2rem; }
+.recipe-time-card ul .recipe-ingredients ul { list-style-type: no/ne;
+  padding-left: 0;
+  margin: 0; }
+.recipe-time-card li,
+.recipe-ingredients li { margin-bottom: 8px;
+  line-height: 1.5; }
+.recipe-instructions ol { padding-left: 20px;
+  margin: 0; }
+.recipe-instructions li { margin-bottom: 16px;
+  line-height: 1.6; }
+.recipe-instructions li::marker { font-weight: bold;
+  color: #8c6d58; }
+.site-footer { margin-top: 12px;
+     padding: 20px;
+     text-align: center; }
+     .footer-nav { display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          gap: 15px;
+          margin-bottom: 12px; }
+     .footer-nav a { color: #111111;
+          text-decoration: none;
+          font-family: 'Trebuchet MS', sans-serif;
+          font-size: 1.2rem; }
+     .footer-nav a:hover { text-decoration: underline; 
+          font-weight: bold; }
+     .copyright { font-size: 0.85rem; 
+          padding-top: 20px; }
